@@ -1,5 +1,10 @@
 # Facebook Audience Network *GODOT Plugin compatible with godot >= 3.2.1 new plugin system*
 
+## Facebook SDK Version
+[dependencies]
+    api ('androidx.annotation:annotation:1.0.0')
+    api ('com.facebook.android:audience-network-sdk:6.+')
+
 ## Using the plugin
 
 `clone` or download the repo to your and place GodotFAN folder to  `your_godot_project/android` folder   , after installing [Android Build Template](https://docs.godotengine.org/en/stable/getting_started/workflow/export/android_custom_build.html)
