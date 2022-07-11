@@ -66,7 +66,7 @@ public class GodotFAN extends Godot.SingletonBase {
             @Override public void run() {
 
                 // interstitial ad listener
-                interstitialAd.setAdListener(new InterstitialAdListener() {
+                InterstitialAdListener interstitialAdListener = new InterstitialAdListener() {
                     @Override
                     public void onInterstitialDisplayed(final Ad ad) {
                         // Interstitial ad displayed callback
@@ -105,9 +105,11 @@ public class GodotFAN extends Godot.SingletonBase {
                         // Ad impression logged callback
                         Log.d("FAN", "Interstitial ad impression logged!");
                     }
-                }); 
-                interstitialAd.loadAd();
-                
+                }; 
+                interstitialAd.loadAd(
+                    interstitialAd.buildLoadAdConfig()
+                        .withAdListener(interstitialAdListener)
+                        .build());
             }
         });
     }
@@ -122,7 +124,7 @@ public class GodotFAN extends Godot.SingletonBase {
                 }
                 
                 rewardedVideoAd = new RewardedVideoAd(appContext,rewardedVideoAdId); // initialization of the rewarded video ad with placement id given from godot script
-                rewardedVideoAd.setAdListener(new RewardedVideoAdListener() {
+                RewardedVideoAdListener rewardedVideoAdListener = new RewardedVideoAdListener() {
                     @Override
                     public void onError(final Ad ad, final AdError error) {
                       // Rewarded video ad failed to load
@@ -168,8 +170,11 @@ public class GodotFAN extends Godot.SingletonBase {
                       Log.d("FAN", "Rewarded video ad closed!");
                       
                     }
-                });
-                rewardedVideoAd.loadAd();
+                };
+                rewardedVideoAd.loadAd(
+                    rewardedVideoAd.buildLoadAdConfig()
+                        .withAdListener(rewardedVideoAdListener)
+                        .build());
             }
         });
     }
@@ -218,7 +223,7 @@ public class GodotFAN extends Godot.SingletonBase {
                 
                 AdView.loadAd();
 
-                AdView.setAdListener(new AdListener() {
+                AdListener adListener = new AdListener() {
                     @Override
                     public void onError(Ad ad, AdError adError) {
                         // Ad error callback
@@ -240,7 +245,7 @@ public class GodotFAN extends Godot.SingletonBase {
                     public void onLoggingImpression(Ad ad) {
                         Log.d("FAN","Banner Impression logged !");
                     }
-                });
+                };
 
             }
         });
