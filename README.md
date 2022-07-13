@@ -9,8 +9,6 @@
 
 ![autoload-facebook-ads](https://user-images.githubusercontent.com/14333871/178789209-4e76dd5d-4426-44e1-829e-996f3a47ebe0.png)
 
-![register-modules](https://user-images.githubusercontent.com/14333871/178789232-8b8ce7f6-fb22-4031-ac96-247ffbc1a02e.png)
-
 ## Using the plugin
 
 `clone` or download the repo to your and place GodotFAN folder to  `your_godot_project/android` folder   , after installing [Android Build Template](https://docs.godotengine.org/en/stable/getting_started/workflow/export/android_custom_build.html)
@@ -26,6 +24,7 @@ in your `project.godot` add
 modules="org/godotengine/godot/GodotFAN"
 ```
 or From Project Setting >> Compression > Android
+![register-modules](https://user-images.githubusercontent.com/14333871/178789232-8b8ce7f6-fb22-4031-ac96-247ffbc1a02e.png)
 
 ## API 
 ```python
