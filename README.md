@@ -4,6 +4,12 @@
 [dependencies]
     api ('androidx.annotation:annotation:1.0.0')
     api ('com.facebook.android:audience-network-sdk:6.+')
+    
+## Config
+
+![autoload-facebook-ads](https://user-images.githubusercontent.com/14333871/178789209-4e76dd5d-4426-44e1-829e-996f3a47ebe0.png)
+
+![register-modules](https://user-images.githubusercontent.com/14333871/178789232-8b8ce7f6-fb22-4031-ac96-247ffbc1a02e.png)
 
 ## Using the plugin
 
