@@ -85,4 +85,4 @@ func onRewardedCompleted() -> void:
 
 `adb -d logcat GodotFan:V FAN:V godot:V *:S`
 
-*Tested with godot 3.2.2*
+*Tested with godot 3.4*
