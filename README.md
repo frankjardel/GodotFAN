@@ -2,8 +2,9 @@
 
 ## Facebook SDK Version
 [dependencies]
-    api ('androidx.annotation:annotation:1.0.0')
-    api ('com.facebook.android:audience-network-sdk:6.+')
+api ('androidx.annotation:annotation:1.0.0')
+
+api ('com.facebook.android:audience-network-sdk:6.+')
     
 ## Config
 
