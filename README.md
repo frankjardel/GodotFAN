@@ -17,7 +17,6 @@ api ('com.facebook.android:audience-network-sdk:6.+')
 
 *the new Godot plugin system doesn't require compiling the source code*
 
-![demo](/facebook-ads-example/demo.gif)
 
 ### Initialize the module
 in your `project.godot` add 
@@ -93,3 +92,5 @@ func onRewardedCompleted() -> void:
 `adb -d logcat GodotFan:V FAN:V godot:V *:S`
 
 *Tested with godot 3.4*
+
+![demo](/facebook-ads-example/demo.gif)
